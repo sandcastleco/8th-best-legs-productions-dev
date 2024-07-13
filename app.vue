@@ -27,7 +27,7 @@ useHead({
 }
 
 .bodyClasses {
-  background-image: url("public/images/bg.jpg");
+  background-image: url("./images/bg.jpg");
   background-size: 100%;
   background-repeat: repeat-x;
   background-color: #120da4;

@@ -6,21 +6,21 @@
     </div>
     <div id="app" class="container-fluid px-0 position-relative mx-auto">
       <img
-        src="public/images/scrr-logo.png"
+        :src="'./images/scrr-logo.png'"
         class="d-md-flex d-none mx-auto"
         width="60%"
         draggable="false"
       />
 
       <img
-        src="public/images/scrr-logo.png"
+        :src="'./images/scrr-logo.png'"
         class="d-flex d-md-none mx-auto"
         width="100%"
         draggable="false"
       />
 
       <img
-        src="public/images/scrr-subtitle.svg"
+        :src="'./images/scrr-subtitle.svg'"
         class="d-md-flex d-none mx-auto ps-3"
         width="60%"
         style="margin-top: -25px !important"
@@ -28,14 +28,14 @@
       />
 
       <img
-        src="public/images/scrr-subtitle.svg"
+        :src="'./images/scrr-subtitle.svg'"
         class="d-flex d-md-none mx-auto"
         width="90%"
         style="margin-top: -15px !important"
         draggable="false"
       />
 
-      <img src="public/images/rp.png" class="rp" width="130%" />
+      <img :src="'./images/rp.png'" class="rp" width="130%" />
 
       <div class="row justify-content-center mb-5">
         <div class="w-100"></div>
@@ -99,7 +99,7 @@
           >
         </div>
 
-        <img src="public/images/kuntz.png" />
+        <img :src="'./images/kuntz.png'" />
       </div>
 
       <!-- <div class="pb-1 mt-5"></div> -->
