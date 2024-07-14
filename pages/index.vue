@@ -1,5 +1,21 @@
 <template>
   <main class="position-relative overflow-hidden">
+    <div class="h-100 w-100 position-absolute" style="z-index: -5">
+      <img
+        class="d-block d-md-none"
+        :src="'./images/bg.jpg'"
+        width="100%"
+        draggable="false"
+      />
+
+      <img
+        class="d-none d-md-block mx-auto"
+        style="max-width: 1200px"
+        :src="'./images/bg-lg.jpg'"
+        width="100%"
+        draggable="false"
+      />
+    </div>
     <div class="behind h-100 w-100 position-absolute top-0 left-0"></div>
     <div class="bg-dark w-100 text-center fs-6">
       The 8th Best Legs in San Francisco presents:
@@ -7,31 +23,29 @@
     <div id="app" class="container-fluid px-0 position-relative mx-auto">
       <img
         :src="'./images/scrr-logo.png'"
-        class="d-md-flex d-none mx-auto"
-        width="60%"
+        class="d-md-flex d-none mx-auto mt-4"
+        width="55%"
         draggable="false"
       />
 
       <img
         :src="'./images/scrr-logo.png'"
-        class="d-flex d-md-none mx-auto"
+        class="d-flex d-md-none mx-auto mt-3 px-2"
         width="100%"
         draggable="false"
       />
 
       <img
-        :src="'./images/scrr-subtitle.svg'"
-        class="d-md-flex d-none mx-auto ps-3"
-        width="60%"
-        style="margin-top: -25px !important"
+        :src="'./images/scrr-subtitle.png'"
+        class="d-md-flex d-none mx-auto ps-3 mt-2"
+        width="50%"
         draggable="false"
       />
 
       <img
-        :src="'./images/scrr-subtitle.svg'"
-        class="d-flex d-md-none mx-auto"
-        width="90%"
-        style="margin-top: -15px !important"
+        :src="'./images/scrr-subtitle.png'"
+        class="d-flex d-md-none mx-auto px-2 mt-2"
+        width="100%"
         draggable="false"
       />
 
@@ -122,28 +136,29 @@
 </script>
 
 <style lang="scss">
-// HOT PINK: #ff32a1
-// RED PINK: #fe395e
-// LIGHT PINK: #fbe4fd
-// BG PINK: #eb4dc2
+// HOT PINK: #ed1964
+// SOFT PINK: #ea4e82 not used?
+// RED: #951a3e
+// WHITE PINK: #fde4e3
+// BABY PINK: #f1a3b3
 
 .behind {
   z-index: -1;
   background-color: #120da4;
-  background-size: 6px 6px;
+  background-size: 8px 8px;
   opacity: 0.2;
   background-blend-mode: color-dodge;
   background-image: repeating-linear-gradient(
     45deg,
     #444cf7 0,
-    #444cf7 0.4px,
-    #e5e5f7 0,
-    #e5e5f7 50%
+    #444cf7 2px,
+    #fde4e3 0,
+    #fde4e3 50%
   );
 }
 
 #app {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -151,7 +166,7 @@
 div {
   font-family: nove, sans-serif;
   font-size: 1.1rem;
-  color: #fbe4fd;
+  color: #fde4e3;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -168,11 +183,11 @@ hr {
 }
 
 a.link {
-  color: #fa5a70;
-  mix-blend-mode: lighten;
+  color: #ed1964;
+  // mix-blend-mode: lighten;
 
   &:hover {
-    mix-blend-mode: color-burn;
+    mix-blend-mode: color-burn !important;
   }
 }
 
@@ -198,7 +213,7 @@ a.link {
 }
 
 .bg-pink {
-  background-color: #fe395e;
+  background-color: #ed1964;
 }
 
 .skew1 {
@@ -206,7 +221,7 @@ a.link {
   transform: scale(1.1) rotate(1deg);
   left: 0px;
   top: -10px;
-  box-shadow: #fa5a70 0px 0px 0px 4px;
+  box-shadow: #ed1964 0px 0px 0px 4px;
 
   @media (min-width: 768px) {
     transform: scale(1.5) rotate(-5deg);
@@ -218,26 +233,26 @@ a.link {
   transform: rotate(2deg);
   left: 20px;
 
-  box-shadow: #fbe4fd 0px 0px 0px 4px;
+  box-shadow: #fde4e3 0px 0px 0px 4px;
   line-height: 1.5 !important;
 }
 
 .lightBackground {
-  background-color: #fbe4fd35;
+  background-color: #fde4e335;
 }
 
 .pinkBackground {
-  background-color: #fe395e70;
+  background-color: #ed196470;
 }
 
 .button {
   font-size: 2rem !important;
   align-items: center;
-  background-color: #fbe4fd;
+  background-color: #fde4e3;
   border: 3px solid pink;
   border-radius: 45px;
   box-sizing: border-box;
-  color: #fe395e;
+  color: #ed1964;
   cursor: pointer;
   display: flex;
   height: 60px;
@@ -254,7 +269,7 @@ a.link {
 }
 
 .button:after {
-  background-color: #fe395e;
+  background-color: #ed1964;
   border-radius: 45px;
   content: "";
   display: block;
@@ -273,7 +288,7 @@ a.link {
 }
 
 .button:active {
-  background-color: #fbe4fd;
+  background-color: #fde4e3;
   outline: 0;
 }
 
@@ -291,7 +306,7 @@ a.link {
 
 .sectionFont {
   font-family: nove, sans-serif;
-  text-shadow: #fe395e 2px 2px;
+  text-shadow: #ed1964 2px 2px;
   font-style: normal;
   font-size: 2.25rem;
   line-height: 1.1;
