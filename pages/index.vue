@@ -10,7 +10,7 @@
 
       <img
         class="d-none d-md-block mx-auto"
-        style="max-width: 1200px"
+        style="max-width: 1400px"
         :src="'./images/bg-lg.jpg'"
         width="100%"
         draggable="false"
@@ -24,7 +24,7 @@
       <img
         :src="'./images/scrr-logo.png'"
         class="d-md-flex d-none mx-auto mt-4"
-        width="55%"
+        width="60%"
         draggable="false"
       />
 
@@ -76,6 +76,18 @@
             Tickets!!
           </a>
         </div>
+        <div class="w-100"></div>
+
+        <div class="col-auto mt-3">
+          <a
+            type="button"
+            href="https://instagram.com/beltingdowntheoctave"
+            target="_blank"
+            class="subtitleFont buttonAlt"
+          >
+            Instagram!!!
+          </a>
+        </div>
         <div class="w-100 mt-5"></div>
 
         <div class="w-100 mb-5"></div>
@@ -121,7 +133,7 @@
 
     <footer class="">
       <div class="container-fluid px-0 sticky-bottom mx-auto">
-        <div class="py-4 row justify-content-center my-4">
+        <div class="py-4 row justify-content-center" style="margin-top: 11%">
           <div class="col-9 mx-auto">
             <Footer />
           </div>
@@ -158,7 +170,7 @@
 }
 
 #app {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -249,10 +261,33 @@ a.link {
   font-size: 2rem !important;
   align-items: center;
   background-color: #fde4e3;
-  border: 3px solid pink;
+  // border: 3px solid pink;
   border-radius: 45px;
   box-sizing: border-box;
   color: #ed1964;
+  cursor: pointer;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0px 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttonAlt {
+  font-size: 2rem !important;
+  align-items: center;
+  background-color: #ed1964;
+  // border: 3px solid pink;
+  border-radius: 45px;
+  box-sizing: border-box;
+  color: #fde4e3;
   cursor: pointer;
   display: flex;
   height: 60px;
@@ -283,7 +318,23 @@ a.link {
   z-index: -1;
 }
 
-.button:hover:after {
+.buttonAlt:after {
+  background-color: #fde4e3;
+  border-radius: 45px;
+  content: "";
+  display: block;
+  height: 60px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+
+  transform: translate(8px, 7px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+.button:hover:after,
+.buttonAlt:hover:after {
   transform: translate(0, 0);
 }
 
@@ -292,7 +343,13 @@ a.link {
   outline: 0;
 }
 
-.button:hover {
+.buttonAlt:active {
+  background-color: #fde4e3;
+  outline: 0;
+}
+
+.button:hover,
+.buttonAlt:hover {
   outline: 0;
 }
 
