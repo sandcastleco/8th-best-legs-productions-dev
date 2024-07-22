@@ -49,24 +49,22 @@
         draggable="false"
       />
 
-      <img :src="'./images/rp.png'" class="rp" width="130%" />
+      <img :src="'./images/rp.png'" class="rp" width="150%" />
 
       <div class="row justify-content-center mb-5">
         <div class="w-100"></div>
 
         <div class="col-auto mt-5">
-          <div
-            class="sectionFont text-center lightBackground p-2 px-3 rounded-3 pinkBackground"
-          >
+          <div class="sectionFont text-center p-2 px-3 rounded-3">
             COME SEE US
             <br class="d-block d-md-none" />
-            AT FRINGE!?
+            AT FRINGE 2024!?
           </div>
         </div>
 
         <div class="w-100"></div>
 
-        <div class="col-auto mt-3">
+        <div class="col-auto mt-2">
           <a
             type="button"
             href="https://tickets.thespaceuk.com/event/911:2523/"
@@ -76,6 +74,33 @@
             Tickets!!
           </a>
         </div>
+
+        <div class="w-100"></div>
+
+        <div class="col-auto mt-4">
+          <div
+            class="sectionFont text-center bg- p-2 px-3 rounded-3 pinkBackground"
+          >
+            AUG 2-10 (22:35)
+            <br />
+            AUG 12-17 (22:55)
+            <br />
+            AUG 19-24 (22:35)
+          </div>
+        </div>
+
+        <div class="w-100"></div>
+
+        <div class="col-auto mt-3">
+          <div class="sectionFont text-center p-2 px-3 rounded-3">
+            THESPACEUK
+            <br />
+            @ NIDDRY ST
+            <br />
+            (£8-£12)
+          </div>
+        </div>
+
         <div class="w-100"></div>
 
         <div class="col-auto mt-3">
@@ -90,7 +115,25 @@
         </div>
         <div class="w-100 mt-5"></div>
 
-        <div class="w-100 mb-5"></div>
+        <div class="col-7 col-md-4 mt-md-3 d-flex">
+          <img
+            class="mx-auto align-self-center"
+            :src="'./images/fringe-logo.svg'"
+            width="75%"
+            draggable="false"
+          />
+        </div>
+
+        <div class="col-7 col-md-4 mt-3 d-flex">
+          <img
+            class="mx-auto align-self-center"
+            :src="'./images/thespaceuk-logo.svg'"
+            width="100%"
+            draggable="false"
+          />
+        </div>
+
+        <div class="w-100 mb-md-5 mb-3"></div>
         <div
           class="col-9 bg-pink p-2 pb-1 rounded-3 text-center position-relative my-5"
           style="transform: rotate(-1deg)"
@@ -205,12 +248,12 @@ a.link {
 
 .rp {
   position: absolute;
-  left: -70px;
+  left: -150px;
   top: 200px;
   z-index: -1;
 
   @media (min-width: 768px) {
-    left: -150px;
+    left: -280px;
     top: 50px;
   }
 }
@@ -224,8 +267,16 @@ a.link {
   }
 }
 
+.text-redPink {
+  color: #ed1964;
+}
+
 .bg-pink {
   background-color: #ed1964;
+}
+
+.bg-whitePink {
+  background-color: #fde4e3;
 }
 
 .skew1 {
@@ -255,6 +306,7 @@ a.link {
 
 .pinkBackground {
   background-color: #ed196470;
+  border: solid 3px #fde4e3;
 }
 
 .button {
@@ -367,6 +419,10 @@ a.link {
   font-style: normal;
   font-size: 2.25rem;
   line-height: 1.1;
+}
+
+.text-shadowDark {
+  text-shadow: black 3px 3px;
 }
 
 .rocknrollFont {
