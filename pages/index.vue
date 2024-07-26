@@ -140,7 +140,7 @@
         >
           <iframe
             class="trailer rounded-3"
-            src="https://www.youtube.com/embed/njYtRywB0sQ?si=ZCnLkvSzLBCoEmqK"
+            src="https://www.youtube.com/embed/2WikBBYud38?si=lHLXsJkWKrJ8Q0Pg"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -161,7 +161,7 @@
           Sexy interview with star <br class="d-none d-md-block" />
           Ryan Patrick Welsh on
           <a
-            class="link bg-white p-1 px-2 rounded-3"
+            class="link bg-whitePink p-1 px-2 rounded-3"
             href="https://broadwaybaby.com/features/the-8th-best-legs-in-san-francisco/2550"
             target="_blank"
             >BroadwayBaby.com</a
